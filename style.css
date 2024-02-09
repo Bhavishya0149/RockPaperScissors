@@ -50,7 +50,7 @@ body{
 
 .b1:hover{
     cursor: pointer;
-    border: none;
+    /* border: 3px ; */
     background-color: white;
     color: black;
 }
