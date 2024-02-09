@@ -48,7 +48,8 @@ document.getElementById("reset").addEventListener("click", () => {
 
 document.getElementById("rock").addEventListener("click", () => {
         if(isRunning == false){
-            alert("Game is not running"); return;
+            // alert("Game is not running"); 
+            return;
         }
         let move = getMove();
         if(move == 0){
@@ -63,7 +64,8 @@ document.getElementById("rock").addEventListener("click", () => {
 });
 document.getElementById("paper").addEventListener("click", () => {
         if(isRunning == false){
-            alert("Game is not running"); return;
+            // alert("Game is not running"); 
+            return;
         }
         let move = getMove();
         if(move == 0){
@@ -78,7 +80,8 @@ document.getElementById("paper").addEventListener("click", () => {
 });
 document.getElementById("scissor").addEventListener("click", () => {
         if(isRunning == false){
-            alert("Game is not running"); return;
+            // alert("Game is not running"); 
+            return;
         }
         let move = getMove();
         if(move == 0){
@@ -91,10 +94,3 @@ document.getElementById("scissor").addEventListener("click", () => {
             pSHolder.innerHTML = ++playerScore;
         }
 });
-
-function updateScore(move){
-    if(isRunning == false){
-        alert("Game is not running!");
-        return;
-    }
-}
