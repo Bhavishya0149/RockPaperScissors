@@ -16,6 +16,7 @@ document.getElementById("set").addEventListener("click", () => {
     statusTag.innerHTML = "The game is running";
     statusTag.style.color = "green";
     isRunning = true;
+    comp_move_update.innerHTML = "&nbsp;";
 })
 
 document.getElementById("stop").addEventListener("click", () => {
