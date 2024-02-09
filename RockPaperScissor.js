@@ -39,10 +39,10 @@ document.getElementById("stop").addEventListener("click", () => {
 })
 
 document.getElementById("reset").addEventListener("click", () => {
-    comp_move_update.innerHTML = "";
     playerScore = 0;
     compScore = 0;
     pSHolder.innerHTML = 0; cSHolder.innerHTML = 0;
+    if(isRunning == false) return; 
     comp_move_update.innerHTML = "Score was reset";
 })
 
