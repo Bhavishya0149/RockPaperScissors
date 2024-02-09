@@ -20,6 +20,7 @@ document.getElementById("set").addEventListener("click", () => {
 })
 
 document.getElementById("stop").addEventListener("click", () => {
+    if(isRunning ==  false) return;
     statusTag.innerHTML = "The game is not running";
     statusTag.style.color = "red";
     isRunning = false;
